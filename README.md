@@ -47,7 +47,7 @@ PORT=3001
 5. Set up the database:
 ```bash
 # Connect to MySQL and run the schema
-mysql -u root -p < ../database/schema.sql
+mysql -u root -p expense_tracker < database/schema.sql
 ```
 
 ## Running the Server
