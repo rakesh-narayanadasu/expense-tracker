@@ -38,7 +38,7 @@ cp .env.example .env
 ```env
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=your_password
+DB_PASSWORD=Expense@123
 DB_NAME=expense_tracker
 DB_PORT=3306
 PORT=3001
