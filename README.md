@@ -153,4 +153,41 @@ curl -X POST http://localhost:3001/api/expenses \
   -H "Content-Type: application/json" \
   -d '{"item_name": "Test Expense", "amount": 25.99}'
 ```
-</lov-write>
+
+## Ubuntu Installation Steps
+1. Update System Packages
+```
+sudo apt update
+sudo apt upgrade -y
+```
+
+2. Install Node.js and npm
+```
+# Method 1: Using NodeSource repository (recommended for latest versions)
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Method 2: Using Ubuntu's default repository
+# sudo apt install nodejs npm
+
+# Verify installation
+node --version
+npm --version
+```
+
+3. Install MySQL Server
+```
+# Install MySQL server
+sudo apt install mysql-server -y
+
+# Start and enable MySQL service
+sudo systemctl start mysql
+sudo systemctl enable mysql
+
+# Secure MySQL installation (optional but recommended)
+sudo mysql_secure_installation
+
+# Access MySQL
+sudo mysql -u root -p
+```
+
