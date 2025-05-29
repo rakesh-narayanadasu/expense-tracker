@@ -47,6 +47,9 @@ PORT=3001
 5. Set up the database:
 ```bash
 # Connect to MySQL and run the schema
+sudo mysql -u root
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Expense@123';
+FLUSH PRIVILEGES;
 mysql -u root -p expense_tracker < database/schema.sql
 ```
 
